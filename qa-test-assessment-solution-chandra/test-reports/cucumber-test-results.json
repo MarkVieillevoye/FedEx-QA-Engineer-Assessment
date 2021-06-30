@@ -1,0 +1,816 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Verify the functionalities of additional flows of application",
+    "line": 1,
+    "id": "verify-the-functionalities-of-additional-flows-of-application",
+    "tags": [],
+    "uri": "e2e\\features\\additional-flows.feature",
+    "elements": [
+      {
+        "id": "verify-the-functionalities-of-additional-flows-of-application;after-a-successful-result-displayed-for-character-search,-if-the-search-form-is-cleared-and-clicked-search,-empty-results-list-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "After a successful result displayed for character search, if the search form is cleared and clicked Search, empty results list should be displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4070000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "You search for character \"Leia Organa\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 400000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Character details for \"Leia Organa\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1049000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Search form is cleared and clicked Search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 232000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Previous search results are cleared",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:118"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 84000000,
+              "error_message": "AssertionError: expected [ true ] to be false"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-the-functionalities-of-additional-flows-of-application;after-a-successful-result-displayed-for-planet-search,-if-the-search-form-is-cleared-and-clicked-search,-empty-results-list-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "After a successful result displayed for planet search, if the search form is cleared and clicked Search, empty results list should be displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4496000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "You search for planet \"Alderaan\" with Enter key",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Planet details for \"Alderaan\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 872000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Search form is cleared and clicked Search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 356000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Previous search results are cleared",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:118"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 68000000,
+              "error_message": "AssertionError: expected [] to be false"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-the-functionalities-of-additional-flows-of-application;after-a-successful-result-displayed,-if-you-switch-to-planet-radio-button-and-click-search,-not-found-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "After a successful result displayed, if you switch to planet radio button and click search, Not Found should be displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "You search for character \"Leia Organa\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Character details for \"Leia Organa\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1097000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "You switch from character to planet radio button and search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Search result is displayed as Not Found",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 388000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Check the installation of the protractor framework",
+    "line": 1,
+    "id": "check-the-installation-of-the-protractor-framework",
+    "tags": [],
+    "uri": "e2e\\features\\assessment-check.feature",
+    "elements": [
+      {
+        "id": "check-the-installation-of-the-protractor-framework;open-the-browser",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open the browser",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3589000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Verify search functionality for character",
+    "line": 1,
+    "id": "verify-search-functionality-for-character",
+    "tags": [],
+    "uri": "e2e\\features\\character-search.feature",
+    "elements": [
+      {
+        "id": "verify-search-functionality-for-character;verify-search-with-valid-character",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify search with valid character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3680000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "You search for character \"Luke Skywalker\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 304000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Character details for \"Luke Skywalker\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 939000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-search-functionality-for-character;verify-search-with-valid-character",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify search with valid character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3522000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "You search for character \"Leia Organa\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 304000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Character details for \"Leia Organa\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-search-functionality-for-character;verify-search-with-valid-character",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify search with valid character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "You search for character \"r2\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Character details for \"r2\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 901000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-search-functionality-for-character;verify-search-with-valid-character",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify search with valid character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3519000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "You search for character \"Darth\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Character details for \"Darth\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1148000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-search-functionality-for-character;verify-search-with-invalid-character",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify search with invalid character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3469000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "You search for character \"invalid\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Search result is displayed as Not Found",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 368000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Verify search functionality for planet",
+    "line": 1,
+    "id": "verify-search-functionality-for-planet",
+    "tags": [],
+    "uri": "e2e\\features\\planet-search.feature",
+    "elements": [
+      {
+        "id": "verify-search-functionality-for-planet;verify-search-with-valid-planet",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify search with valid planet",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "You search for planet \"Alderaan\" with Enter key",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Planet details for \"Alderaan\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-search-functionality-for-planet;verify-search-with-valid-planet",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify search with valid planet",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3528000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "You search for planet \"Hoth\" with Enter key",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Planet details for \"Hoth\" are displayed",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 891000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-search-functionality-for-planet;verify-search-with-invalid-planet",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verify search with invalid planet",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3770000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "You search for planet \"invalid\" with Enter key",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 676000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Search result is displayed as Not Found",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
