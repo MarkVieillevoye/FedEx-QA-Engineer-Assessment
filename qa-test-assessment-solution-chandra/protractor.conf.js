@@ -11,7 +11,7 @@ exports.config = {
   getPageTimeout: 25000,
   specs: [
     './e2e/features/*.feature'
-    //'./e2e/features/additional-flows.feature'
+    //'./e2e/features/character-search.feature'
   ],
   capabilities: {
     'browserName': 'chrome',
@@ -51,7 +51,7 @@ exports.config = {
       metaData: {
         "App Version": "0.0.0",
         "Test Environment": "Dev",
-        "Browser": "Chrome",
+        "Browser": "Chrome 91.0.4472.124",
         "Platform": "Windows 10",
         "Executed": "Local"
       }

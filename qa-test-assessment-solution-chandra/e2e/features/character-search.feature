@@ -9,8 +9,9 @@ Feature: Verify search functionality for character
             | characterName  |
             | Luke Skywalker |
             | Leia Organa    |
-            | r2             |
-            | Darth          |
+            | R2-D2          |
+            | Darth Vader    |
+            | Darth Maul     |
 
     Scenario: Verify search with invalid character
         Given The app is open on "localhost"
